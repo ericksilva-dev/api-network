@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Networki View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NetworkiViewController" customModule="api_network" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing Service Call." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-Oa-2Ge">
+                                <rect key="frame" x="36" y="80" width="342" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the service flame you will use and test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSO-bx-68l">
+                                <rect key="frame" x="36" y="125" width="342" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base URL: https://api.github" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9M-yt-IIQ">
+                                <rect key="frame" x="36" y="202.5" width="342" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kic-xA-clq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place your base url, example: https://api.github.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvV-N4-zeb">
+                                <rect key="frame" x="36" y="260.5" width="342" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.50980392159999999" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Path: users/allusers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjr-I6-hZB">
+                                <rect key="frame" x="36" y="291" width="342" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="423-yO-nEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="put path that will complement the service call" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edd-NJ-bAj">
+                                <rect key="frame" x="36" y="349" width="342" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.50980392159999999" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what type of verb is used for the service call" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc6-MJ-Enf">
+                                <rect key="frame" x="36" y="393.5" width="342" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64P-aH-7Sf">
+                                <rect key="frame" x="56" y="452.5" width="302" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kYS-OP-8ll"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeN-Ew-zNU">
+                                <rect key="frame" x="56" y="770" width="302" height="56"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.92156862750000001" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="FoG-MS-BaC"/>
+                                </constraints>
+                                <state key="normal" title="TESTING REQUEST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="edd-NJ-bAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="21Y-HI-8v1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jc6-MJ-Enf" secondAttribute="trailing" constant="36" id="3TV-Dn-QHE"/>
+                            <constraint firstItem="I9M-yt-IIQ" firstAttribute="top" secondItem="eSO-bx-68l" secondAttribute="bottom" constant="56" id="4Cg-Gh-fnj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VeN-Ew-zNU" secondAttribute="trailing" constant="56" id="7aI-Gd-YIo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iws-Oa-2Ge" secondAttribute="trailing" constant="36" id="9qE-dR-jmc"/>
+                            <constraint firstItem="VeN-Ew-zNU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="Bf1-Om-3mW"/>
+                            <constraint firstItem="64P-aH-7Sf" firstAttribute="top" secondItem="Jc6-MJ-Enf" secondAttribute="bottom" constant="16" id="D33-Dq-Goj"/>
+                            <constraint firstItem="iws-Oa-2Ge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="D4q-F8-hQF"/>
+                            <constraint firstItem="wjr-I6-hZB" firstAttribute="top" secondItem="YvV-N4-zeb" secondAttribute="bottom" constant="16" id="Fzs-af-3YT"/>
+                            <constraint firstItem="64P-aH-7Sf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="I5h-mL-jHa"/>
+                            <constraint firstItem="wjr-I6-hZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="IYN-uM-vuy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I9M-yt-IIQ" secondAttribute="trailing" constant="36" id="Isd-lY-UW1"/>
+                            <constraint firstItem="iws-Oa-2Ge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Kfm-KP-0dI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YvV-N4-zeb" secondAttribute="trailing" constant="36" id="PuE-ch-IKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64P-aH-7Sf" secondAttribute="trailing" constant="56" id="U3g-DZ-Buv"/>
+                            <constraint firstItem="Jc6-MJ-Enf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="UTJ-l6-6o5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eSO-bx-68l" secondAttribute="trailing" constant="36" id="UWR-zk-0rd"/>
+                            <constraint firstItem="Jc6-MJ-Enf" firstAttribute="top" secondItem="edd-NJ-bAj" secondAttribute="bottom" constant="30" id="Vbs-0t-eoA"/>
+                            <constraint firstItem="YvV-N4-zeb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="bd2-oO-3Xq"/>
+                            <constraint firstItem="I9M-yt-IIQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="cTO-Cl-6GM"/>
+                            <constraint firstItem="YvV-N4-zeb" firstAttribute="top" secondItem="I9M-yt-IIQ" secondAttribute="bottom" constant="8" id="i0Y-Sc-6D9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VeN-Ew-zNU" secondAttribute="bottom" constant="36" id="iPj-Bi-bQY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edd-NJ-bAj" secondAttribute="trailing" constant="36" id="mRF-Nk-hl5"/>
+                            <constraint firstItem="eSO-bx-68l" firstAttribute="top" secondItem="iws-Oa-2Ge" secondAttribute="bottom" constant="16" id="qao-md-ycv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wjr-I6-hZB" secondAttribute="trailing" constant="36" id="wA2-IW-o8h"/>
+                            <constraint firstItem="edd-NJ-bAj" firstAttribute="top" secondItem="wjr-I6-hZB" secondAttribute="bottom" constant="8" id="xA6-J4-Tkc"/>
+                            <constraint firstItem="eSO-bx-68l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="yGU-5t-veV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>

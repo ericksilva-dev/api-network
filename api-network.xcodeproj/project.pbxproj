@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		F4BB04CC24423F46005F2133 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB04CB24423F46005F2133 /* AppDelegate.swift */; };
 		F4BB04CE24423F46005F2133 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB04CD24423F46005F2133 /* SceneDelegate.swift */; };
-		F4BB04D024423F46005F2133 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB04CF24423F46005F2133 /* ViewController.swift */; };
 		F4BB04D324423F46005F2133 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BB04D124423F46005F2133 /* Main.storyboard */; };
 		F4BB04D524423F49005F2133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BB04D424423F49005F2133 /* Assets.xcassets */; };
 		F4BB04D824423F49005F2133 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BB04D624423F49005F2133 /* LaunchScreen.storyboard */; };
 		F4BB04E324423F49005F2133 /* api_networkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB04E224423F49005F2133 /* api_networkTests.swift */; };
 		F4BB04EE24423F49005F2133 /* api_networkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB04ED24423F49005F2133 /* api_networkUITests.swift */; };
+		F4BB04FE2442405E005F2133 /* NetworkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB04FD2442405E005F2133 /* NetworkiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		F4BB04C824423F46005F2133 /* api-network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "api-network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BB04CB24423F46005F2133 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BB04CD24423F46005F2133 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4BB04CF24423F46005F2133 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4BB04D224423F46005F2133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4BB04D424423F49005F2133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BB04D724423F49005F2133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		F4BB04E924423F49005F2133 /* api-networkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "api-networkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BB04ED24423F49005F2133 /* api_networkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_networkUITests.swift; sourceTree = "<group>"; };
 		F4BB04EF24423F49005F2133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BB04FD2442405E005F2133 /* NetworkiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +99,11 @@
 		F4BB04CA24423F46005F2133 /* api-network */ = {
 			isa = PBXGroup;
 			children = (
-				F4BB04CB24423F46005F2133 /* AppDelegate.swift */,
-				F4BB04CD24423F46005F2133 /* SceneDelegate.swift */,
-				F4BB04CF24423F46005F2133 /* ViewController.swift */,
-				F4BB04D124423F46005F2133 /* Main.storyboard */,
 				F4BB04D424423F49005F2133 /* Assets.xcassets */,
+				F4BB04CD24423F46005F2133 /* SceneDelegate.swift */,
+				F4BB04CB24423F46005F2133 /* AppDelegate.swift */,
+				F4BB04FB24423FEE005F2133 /* Network */,
+				F4BB04FC24424015005F2133 /* Example */,
 				F4BB04D624423F49005F2133 /* LaunchScreen.storyboard */,
 				F4BB04D924423F49005F2133 /* Info.plist */,
 			);
@@ -126,6 +126,22 @@
 				F4BB04EF24423F49005F2133 /* Info.plist */,
 			);
 			path = "api-networkUITests";
+			sourceTree = "<group>";
+		};
+		F4BB04FB24423FEE005F2133 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4BB04FC24424015005F2133 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F4BB04D124423F46005F2133 /* Main.storyboard */,
+				F4BB04FD2442405E005F2133 /* NetworkiViewController.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4BB04D024423F46005F2133 /* ViewController.swift in Sources */,
 				F4BB04CC24423F46005F2133 /* AppDelegate.swift in Sources */,
+				F4BB04FE2442405E005F2133 /* NetworkiViewController.swift in Sources */,
 				F4BB04CE24423F46005F2133 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

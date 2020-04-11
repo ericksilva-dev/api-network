@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NetworkiViewController.swift
 //  api-network
 //
 //  Created by Erick Kaique Da Silva on 11/04/20.
@@ -8,13 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class NetworkiViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
