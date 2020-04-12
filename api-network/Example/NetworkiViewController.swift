@@ -9,7 +9,21 @@
 import UIKit
 
 class NetworkiViewController: UIViewController {
+    
+    @IBOutlet weak var baseUrlTF: UITextField!
+    @IBOutlet weak var pathUrlTF: UITextField!
+    @IBOutlet weak var methodUrlPV: UIPickerView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func btnMoreSettings(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func btnTestingRequest(_ sender: UIButton) {
+        
     }
 }
